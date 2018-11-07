@@ -122,6 +122,47 @@ $(function(){
         }//success function
         
     }); //ajax
+/*-----------------------------------------------------*/     
+    
+    
+$('#form').validetta({
+  onValid : function( event ) {
+    event.preventDefault(); // Will prevent the submission of the form
+   
+   //alert( 'Nice, Form is valid.' );
+ 
+ // ici faire la requête ajax
+ 
+ 
+ }, // valid
+  onError : function( event ){
+    //alert( 'Stop bro !! There are some errors.');
+  
+  
+  }, // error
+  
+  
+  display : 'bubble',
+  errorClass : 'validetta-error',
+  /** Same for valid validation */
+  validClass : 'validetta-valid', // Same for valid validation
+  bubblePosition: 'right', // Bubble position // right / bottom
+  bubbleGapLeft: 15, // Right gap of bubble (px unit)
+  bubbleGapTop: 0, // Top gap of bubble (px unit)
+  /* To enable real-time form control, set this option true. */
+  realTime : true
+  
+});//validetta
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }); //ready
